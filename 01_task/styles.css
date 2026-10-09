@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #20123a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+}
+
+.contenidor {
+    width: 100%;
+    max-width: 620px;
+    padding: 30px;
+
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+
+    margin-bottom: 18px;
+
+    transition: transform 0.25s ease;
+}
+
+.logo:hover {
+    transform: scale(1.04);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+
+    margin-bottom: 6px;
+}
+
+.subtitol {
+    color: #777;
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+.cerca {
+    width: 100%;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 17px;
+    padding-right: 6px;
+
+    background: white;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 27px;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.cerca:focus-within {
+    border-color: #35c4c0;
+
+    box-shadow: 0 0 0 3px rgba(0, 96, 223, 0.12);
+}
+
+.icona {
+    color: #777;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.buscador {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 16px;
+    color: #20123a;
+}
+
+.buscador::placeholder {
+    color: #999;
+}
+
+.cerca button {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #0060df;
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+}
+
+.botons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.botons button {
+    padding: 10px 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    background: #f7f7f7;
+    color: #333;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.botons button:hover {
+    background: #eeeeee;
+    border-color: #ccc;
+}

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #070707;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.topbar {
+    height: 60px;
+    padding: 0 3.2%;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    background: linear-gradient(to bottom, #080808, #070707);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    white-space: nowrap;
+}
+
+.navigation a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.2s;
+}
+
+.navigation a:hover {
+    color: #b3b3b3;
+}
+
+.navigation .my-netflix {
+    background: #0e0d0d;
+    color: white;
+    font-weight: bold;
+    padding: 8px 13px;
+    border-radius: 20px;
+    margin-left: -5px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: auto;
+}
+
+.icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 30px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-button svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 0;
+    right: -3px;
+    width: 9px;
+    height: 9px;
+    background: #e50914;
+    border: 1px solid #141414;
+    border-radius: 50%;
+}
+
+.icon-button:hover {
+    opacity: 0.75;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+main {
+    padding-top: 12px;
+}
+
+.content-section {
+    margin-bottom: 26px;
+    padding-left: 3.2%;
+}
+
+.content-section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 11px;
+    color: #f5f5f5;
+}
+
+.movie-row {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-right: 3.2%;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+}
+
+.movie-row::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-card {
+    flex: 0 0 188px;
+    height: 106px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #252525;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.movie-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-card:hover {
+    transform: scale(1.06);
+    z-index: 5;
+}
+
+.progress {
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #555;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    background: #e50914;
+}
+
+.new-label {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 3px 8px;
+    background: #e50914;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+    .movie-card {
+        flex-basis: 188px;
+        height: 106px;
+    }
+
+    .content-section h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .topbar {
+        height: auto;
+        min-height: 58px;
+        padding: 12px 4%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navigation {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 5px 0;
+        scrollbar-width: none;
+    }
+
+    .navigation::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navigation a {
+        font-size: 11px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .content-section {
+        padding-left: 4%;
+        margin-bottom: 22px;
+    }
+
+    .content-section h2 {
+        font-size: 15px;
+    }
+
+    .movie-card {
+        flex-basis: 150px;
+        height: 85px;
+    }
+}

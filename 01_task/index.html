@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Firefox</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="contenidor">
+
+        <img src="firefox.png" alt="Firefox" class="logo">
+
+        <h1>Firefox</h1>
+
+        <form
+            class="cerca"
+            action="https://www.google.com/search"
+            method="GET"
+        >
+            <span class="icona">⌕</span>
+
+            <input
+                type="text"
+                name="q"
+                class="buscador"
+                placeholder="Cerca a FireFox..."
+                autocomplete="off"
+            >
+
+            <button type="submit">?</button>
+        </form>
+
+        <div class="botons">
+            <button type="button" onclick="document.querySelector('.buscador').focus()">
+                Cerca
+            </button>
+
+            <button
+                type="button"
+                onclick="window.location.href='https:firefox.com'"
+            >
+                Sorprèn-me
+            </button>
+        </div>
+
+    </main>
+
+</body>
+</html>
