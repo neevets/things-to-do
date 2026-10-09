@@ -1,0 +1,10 @@
+GUIA DOCENT – PRÀCTICA 3: STEAM VISUAL REALISTA
+
+✅ Objectius:
+- Reproduir fidelment una web coneguda (Steam).
+- Fer servir layout grid, efectes visuals i capçalera funcional.
+
+📌 Elements clau:
+- Encabezament amb logo i navegació
+- Hero amb crida a l'acció
+- Catàleg de jocs responsive
