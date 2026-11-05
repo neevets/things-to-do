@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-left, .sidebar-right {
+    width: 15%;
+    padding: 20px;
+    background: #fff;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.sidebar-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar-left nav a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-right {
+    font-size: 14px;
+    color: #555;
+}
+
+main {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.stories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.story {
+    text-align: center;
+}
+
+.story img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #f20044;
+}
+
+.post {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.post-img img {
+    width: 100%;
+}
+
+.post-actions {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.heart.clicked {
+    color: red;
+}
