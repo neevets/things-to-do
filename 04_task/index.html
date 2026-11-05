@@ -1,61 +1,83 @@
-    
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
+    <title>Discord</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <aside class="sidebar-left">
-            <h2>Instagram</h2>
-            <nav>
-                <a href="#">🏠 Home</a>
-                <a href="#">🔍 Search</a>
-                <a href="#">🧭 Explore</a>
-                <a href="#">🎥 Reels</a>
-                <a href="#">✉️ Messages</a>
-                <a href="#">🔔 Notifications</a>
-                <a href="#">➕ Create</a>
-                <a href="#">👤 Profile</a>
-            </nav>
+        <aside class="servers">
+            <div class="server active">D</div>
+            <div class="server">G</div>
+            <div class="server">M</div>
+            <div class="add-server">+</div>
         </aside>
 
-        <main>
-            <div class="stories">
-                <div class="story"><img src="img/user1.png"><span>Stuani</span></div>
-                <div class="story"><img src="img/user2.png"><span>Jinx</span></div>
-                <div class="story"><img src="img/user3.png"><span>Auron</span></div>
-                <div class="story"><img src="img/user4.png"><span>Ibai</span></div>
-            </div>
+        <aside class="sidebar">
+            <h2>Discord</h2>
+            <div class="search">Buscar una conversa...</div>
 
-            <div class="post">
-                <div class="post-img">
-                    <img src="img/post1.jpg" alt="Publicació">
-                </div>
-                <div class="post-actions">
-                    <span class="icon heart">♡</span>
-                    <span class="icon">💬</span>
-                    <span class="icon">📤</span>
-                </div>
-                <div class="post-caption">
-                    <strong>@usuari</strong> Mola casa nostra!!!
-                </div>
+            <h3>MISSATGES DIRECTES</h3>
+            <div class="friend active" data-name="Alex" data-status="En línia">
+                <div class="avatar blue">A</div>
+                <div><strong>Alex</strong><small>En línia</small></div>
             </div>
+            <div class="friend" data-name="Maria" data-status="En línia">
+                <div class="avatar pink">M</div>
+                <div><strong>Maria</strong><small>En línia</small></div>
+            </div>
+            <div class="friend" data-name="Pau" data-status="Desconnectat">
+                <div class="avatar green">P</div>
+                <div><strong>Pau</strong><small>Desconnectat</small></div>
+            </div>
+            <div class="friend" data-name="Júlia" data-status="En línia">
+                <div class="avatar purple">J</div>
+                <div><strong>Júlia</strong><small>En línia</small></div>
+            </div>
+        </aside>
+
+        <main class="chat">
+            <header class="chat-header">
+                <div class="avatar blue" id="header-avatar">A</div>
+                <div>
+                    <strong id="chat-name">Alex</strong>
+                    <small id="chat-status">En línia</small>
+                </div>
+            </header>
+
+            <section class="messages" id="messages">
+                <div class="day">AVUI</div>
+                <div class="message">
+                    <div class="avatar blue">A</div>
+                    <div class="message-content">
+                        <div class="message-info"><strong>Alex</strong><small>18:20</small></div>
+                        <p>Ei! Com va tot?</p>
+                    </div>
+                </div>
+                <div class="message mine">
+                    <div class="avatar purple">S</div>
+                    <div class="message-content">
+                        <div class="message-info"><strong>Tu</strong><small>18:21</small></div>
+                        <p>Tot bé! I tu?</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="avatar blue">A</div>
+                    <div class="message-content">
+                        <div class="message-info"><strong>Alex</strong><small>18:22</small></div>
+                        <p>Perfecte! Has vist el nou servidor?</p>
+                    </div>
+                </div>
+            </section>
+
+            <form class="message-form" id="message-form">
+                <input type="text" id="message-input" placeholder="Escriu un missatge..." autocomplete="off">
+                <button type="submit">Enviar</button>
+            </form>
         </main>
-
-        <aside class="sidebar-right">
-            <h3>Suggested for you</h3>
-            <ul>
-                <li><a href="https://www.youtube.com/@julianfernandezmartinez5844"><div class="story"><img src="img/user5.png"><span>Julià FM</span></div></a></li>
-                <li><a href="https://www.youtube.com/@Brackeys"><div class="story"><img src="img/user6.png"><span>Brackeys</span></div></a></li>
-                <li><a href="https://drive.google.com/drive/folders/1IlvHCIW65Ceyk34OA_nxalw5U4s62rRo?usp=sharing"><div class="story"><img src="img/user7.png"><span>GironaFC</span></div></a></li>
-            </ul>
-
-        </aside>
     </div>
 </body>
 </html>
